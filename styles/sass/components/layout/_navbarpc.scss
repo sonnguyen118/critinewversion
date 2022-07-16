@@ -1,0 +1,82 @@
+.navbar-pc {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 20% 25px 20%;
+  z-index: 20;
+  &__logo {
+    position: relative;
+    width: 120px;
+    height: 60px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    right: 0;
+    &-text {
+      color: $color-grey-light;
+      font-size: 20px;
+      margin-left: 46px;
+    }
+  }
+}
+.navbar-pc-scroll {
+  //   background-color: #000642;
+  transition: 0.5s ease-in;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 6, 66, 1),
+    rgba(0, 6, 66, 0)
+  );
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+// responsive
+@include responsive_280 {
+  .nav-pc {
+    display: none;
+  }
+}
+@include responsive_320 {
+  .nav-pc {
+    display: none;
+  }
+}
+
+@include responsive_375 {
+  .nav-pc {
+    display: none;
+  }
+}
+
+@include responsive_425 {
+  .nav-pc {
+    display: none;
+  }
+}
+@include responsive_456 {
+  .nav-pc {
+    display: none;
+  }
+}
+
+@include responsive_768 {
+  .nav-pc {
+    display: none;
+  }
+}
+
+@include responsive_992 {
+}
+
+@include responsive_1024 {
+}
+
+@include responsive_1200 {
+}
+@include responsive_1440 {
+}
+@include responsive_1650 {
+}

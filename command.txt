@@ -1,0 +1,13 @@
+npm install node-sass
+
+cách lề 2 bên
+1920 -> 1650 là 20%
+1440 -> 1650 là 15%
+1024 -> 1440 là 12%
+-> 1024 là 10%, chân trang - navbar là 5%
+5%
+
+280 là tất cả 2%
+
+yarn add react-slick
+npm install slick-carousel --save

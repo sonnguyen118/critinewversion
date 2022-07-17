@@ -21,6 +21,14 @@ const MyClient = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 457,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 2,
+        },
+      },
     ],
   };
   const data_company = [

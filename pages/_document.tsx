@@ -29,9 +29,13 @@ export default class CustomDocument extends Document {
           <NextScript />
         </body>
         <div id="fb-root"></div>
+        <div id="fb-customer-chat" className="fb-customerchat"></div>
         <script
           dangerouslySetInnerHTML={{
             __html: `
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "1447139348842481");
+            chatbox.setAttribute("attribution", "biz_inbox");
             window.fbAsyncInit = function() {
               FB.init({
                 xfbml            : true,
@@ -48,7 +52,6 @@ export default class CustomDocument extends Document {
             `,
           }}
         />
-        <div id="fb-customer-chat" className="fb-customerchat"></div>
         {/* <div
           className="fb-customerchat"
           attribution="page_inbox"

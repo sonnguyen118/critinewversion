@@ -22,7 +22,7 @@ const NavbarPC = () => {
   return (
     <>
       <div className={navbar ? "navbar-pc" : "navbar-pc navbar-pc-scroll"}>
-        <div className="navbar-pc__logo">
+        <div className={navbar ? "navbar-pc__logo" : "navbar-pc__logo-scroll"}>
           <Image
             src={`/layout/footer/Asset8.png`}
             alt="description of image"

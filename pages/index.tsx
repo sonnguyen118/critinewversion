@@ -22,6 +22,7 @@ const Home: NextPage = (props) => {
           <NavbarMB />
         </div>
         <HomePage />
+
         <Footer />
       </div>
     </div>

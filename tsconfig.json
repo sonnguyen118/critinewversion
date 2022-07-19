@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/home/myclient.jsx",
-    "pages/home/orders.jsx"
+    "pages/home/orders.jsx",
+    "pages/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

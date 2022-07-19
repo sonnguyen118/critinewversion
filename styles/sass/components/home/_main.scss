@@ -81,9 +81,6 @@
         margin: 0 20%;
         justify-content: space-between;
         &-item {
-          &:hover {
-            cursor: pointer;
-          }
           &:nth-child(1) {
             background-image: url("/homepage/Asset1.png");
           }
@@ -108,12 +105,15 @@
           background-repeat: no-repeat;
           background-size: cover;
           margin-bottom: 35px;
+          transition: transform 0.5s ease-out;
           // animation
           animation-name: ScaleAnimation;
           animation-duration: 1s;
           animation-iteration-count: 1;
+
           &-infor {
             margin-top: 72%;
+
             &-title {
               text-align: center;
               font-family: "Chakra Petch", sans-serif;
@@ -121,13 +121,54 @@
               font-weight: 800;
               color: $color-grey-light;
               letter-spacing: 3px;
+              display: block;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                left: 10%;
+                bottom: -2px;
+                width: 80%;
+                height: 2px;
+                background-color: $color-primary;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                left: 10%;
+                top: -2px;
+                width: 80%;
+                height: 2px;
+                background-color: $color-primary;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+              }
             }
             &-sub {
               text-align: justify;
               color: $color-grey-light;
               font-size: 16px;
               margin: 10px 10%;
+              transition: 0.5s ease-out;
             }
+          }
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.2s ease-out;
+          }
+          &:hover .home-aboutus-group-item-infor-title::after,
+          &:hover .home-aboutus-group-item-infor-title::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+          &:hover .home-aboutus-group-item-infor-sub {
+            color: $color-primary;
+            transition: 0.2s ease-out;
           }
         }
       }

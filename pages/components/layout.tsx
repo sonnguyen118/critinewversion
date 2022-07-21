@@ -37,14 +37,15 @@ const Layout = ({
       <meta name="verify-v1" content="unique-string" />
       <meta name="google" content={content_Google} />
       <title>{title}</title>
-      <meta name="robots" content="noindex,nofollow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="robots" content="index, follow" />
       <link rel="icon" href="/criti_logo.png" />
       <meta property="og:url" content={url_facebook} />
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title_facebook} />
       <meta property="og:description" content={description_facebook} />
       <meta property="og:image" content={image_facebook} />
-      <meta property="fb:app_id" content="1447139348842481" />
+      <meta property="fb:app_id" content="1707983096240371" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@flickr" />
       <meta name="twitter:title" content={title_facebook} />

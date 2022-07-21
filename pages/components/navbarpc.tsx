@@ -32,12 +32,24 @@ const NavbarPC = () => {
           />
         </div>
         <div className="navbar-pc__menu">
-          <div className="navbar-pc__menu-text">Games</div>
-          <div className="navbar-pc__menu-text">Films</div>
-          <div className="navbar-pc__menu-text">AI</div>
-          <div className="navbar-pc__menu-text">Thiết kế</div>
-          <div className="navbar-pc__menu-text">Cộng đồng</div>
-          <div className="navbar-pc__menu-text">Liên hệ</div>
+          <Link href={"/games"}>
+            <a className="navbar-pc__menu-text">Games</a>
+          </Link>
+          <Link href={"/films"}>
+            <div className="navbar-pc__menu-text">Films</div>
+          </Link>
+          <Link href={"/ai"}>
+            <div className="navbar-pc__menu-text">AI</div>
+          </Link>
+          <Link href={"/design"}>
+            <div className="navbar-pc__menu-text">Thiết kế</div>
+          </Link>
+          <Link href={"/community"}>
+            <div className="navbar-pc__menu-text">Cộng đồng</div>
+          </Link>
+          <Link href={"/contact"}>
+            <div className="navbar-pc__menu-text">Liên hệ</div>
+          </Link>
         </div>
       </div>
     </>

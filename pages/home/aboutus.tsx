@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="home-aboutus">
-        <div className="home-aboutus-title">VỀ CHÚNG TA</div>
+        <div className="home-aboutus-title">VỀ CHÚNG TÔI</div>
         <div className="home-aboutus-group">
           <div className="home-aboutus-group-item">
             <div className="home-aboutus-group-item-infor">

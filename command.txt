@@ -13,3 +13,4 @@ yarn add react-slick
 npm install slick-carousel --save
 
 npm i react-scroll-to-top
+yarn add next-seo
